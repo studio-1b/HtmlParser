@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD0163BB-1D0A-4869-AAAA-EA21EE8B964A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CrawlerCommon</RootNamespace>
+    <AssemblyName>CrawlerCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HtmlBuilder.cs" />
+    <Compile Include="HtmlPath.cs" />
+    <Compile Include="HtmlPathTest\AttribComparisonTest.cs" />
+    <Compile Include="HtmlPathTest\AttribNodeTest.cs" />
+    <Compile Include="HtmlPathTest\AttribTest.cs" />
+    <Compile Include="HtmlPathTest\AttribToken.cs" />
+    <Compile Include="HtmlPathTest\ChildTest.cs" />
+    <Compile Include="HtmlPathTest\AttribContainsTest.cs" />
+    <Compile Include="HtmlPathTest\ElementComparisonTest.cs" />
+    <Compile Include="HtmlPathTest\ElementPositionComparisonTest.cs" />
+    <Compile Include="HtmlPathTest\ElementPositionTest.cs" />
+    <Compile Include="HtmlPathTest\ElementTest.cs" />
+    <Compile Include="HtmlPathTest\IExprHandler.cs" />
+    <Compile Include="HtmlPathTest\NotTest.cs" />
+    <Compile Include="HtmlPathTest\OrTest.cs" />
+    <Compile Include="HtmlPathTest\ParentTest.cs" />
+    <Compile Include="HtmlPathTest\RootTest.cs" />
+    <Compile Include="HtmlTokenizer.cs" />
+    <Compile Include="HtmlPathTest\IConverterNeeded.cs" />
+    <Compile Include="IIndexableParseElement.cs" />
+    <Compile Include="ITokenTest.cs" />
+    <Compile Include="IValueFactory.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadonlyStringSegment.cs" />
+    <Compile Include="TagDef\StrictXHTML\Attribute.cs" />
+    <Compile Include="TagDef\StrictXHTML\AttributeCollection.cs" />
+    <Compile Include="TagDef\StrictXHTML\BlockTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\Closure.cs" />
+    <Compile Include="TagDef\StrictXHTML\CommentTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\Declaration.cs" />
+    <Compile Include="TagDef\StrictXHTML\Div.cs" />
+    <Compile Include="TagDef\StrictXHTML\Document.cs" />
+    <Compile Include="TagDef\StrictXHTML\FormTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\Html.cs" />
+    <Compile Include="TagDef\StrictXHTML\Hyperlink.cs" />
+    <Compile Include="TagDef\StrictXHTML\Img.cs" />
+    <Compile Include="TagDef\StrictXHTML\InlineTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\ListTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\Literal.cs" />
+    <Compile Include="TagDef\StrictXHTML\NilTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\Node.cs" />
+    <Compile Include="TagDef\StrictXHTML\ObjectTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\PresentationalTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\ScriptTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\TableTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\Tag.cs" />
+    <Compile Include="TagDef\StrictXHTML\TextTag.cs" />
+    <Compile Include="TagDef\StrictXHTML\Token.cs" />
+    <Compile Include="TagDef\StrictXHTML\TokenCollection.cs" />
+    <Compile Include="TagDef\StrictXHTML\UnknownTag.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
