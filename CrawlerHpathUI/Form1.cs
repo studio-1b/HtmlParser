@@ -160,6 +160,8 @@ namespace CrawlerHpathUI
         {
             try
             {
+                // System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls12;
+                System.Net.ServicePointManager.SecurityProtocol |= (System.Net.SecurityProtocolType)0x3000;
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
                 Stream result;
 
